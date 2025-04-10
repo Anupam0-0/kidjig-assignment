@@ -80,18 +80,18 @@ export default function ExploreModels() {
             </div>
 
             {/* body */}
-            <div className='px-4 md:px-16 xl:px-24'>
+            <div className='px-8 md:px-16 xl:px-24'>
                 <ImageTag src='https://platform.kidjig.com/og-image.png' height={10} width={1300} alt='screenshot' className='rounded-lg md:rounded-4xl mx-auto shadow-xl shadow-blue-300/20 border border-b-blue-500'></ImageTag>
             </div>
 
-            <div className='flex flex-col items-center md:flex-row md:justify-center gap-10 py-16 px-4 '>
+            <div className='flex flex-col items-center md:flex-row md:justify-center gap-6 lg:gap-10 sm:py-16 px-8 md:px-16'>
                 {
                     ExlporeList.map((items) => (
-                        <div key={items.id} className='w-[38em] h-[37em] flex flex-col gap-4 items-start justify-center p-6 rounded-4xl bg-linear-to-tl from-blue-600/60 via-neutral-900 to-neutral-900 shadow-xl shadow-blue-400/20 border border-blue-500/50 border-b-blue-600'>
+                        <div key={items.id} className='w-[25em] h-[28em] lg:w-[38em] lg:h-[34em] xl:h-[37em] flex flex-col gap-4 items-start justify-center p-6 rounded-4xl bg-linear-to-tl from-blue-600/60 via-neutral-900 to-neutral-900 shadow-xl shadow-blue-400/20 border border-blue-500/50 border-b-blue-600'>
                             <div className='text-blue-500 scale-150'>{items.icon}</div>
                             <h2 className='text-4xl text-slate-100 font-medium'>{items.name}</h2>
                             <p className='text-md text-slate-100/80' >{items.content}</p>
-                            <ImageTag className='rounded-2xl' src={items.image} height={10} width={600} alt='code-example'></ImageTag>
+                            <ImageTag className='rounded-2xl' src={items.image} height={400} width={600} alt='code-example'></ImageTag>
                         </div>
 
                     ))
@@ -115,7 +115,7 @@ export default function ExploreModels() {
                     </Accordion>
                 </div>
             </div>
-            <div className='h-[0.5px] bg-neutral-100/80 mx-20 '></div>
+            <div className='h-[0.5px] bg-slate-800 mx-20 '></div>
 
         </main>
     )
